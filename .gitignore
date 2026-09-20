@@ -1,73 +1,47 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
-# dependencies
+```
+# Dependencies
 node_modules/
-package-lock.json
 
-# Expo
-.expo/
+# Build artifacts
 dist/
-web-build/
-expo-env.d.ts
+build/
+.next/
+.nuxt/
+.un~lock-*
 
-# Native
-.kotlin/
-*.orig.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
-
-# Metro
-.metro-health-check*
-
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
-
-# macOS
-.DS_Store
-*.pem
-
-# local env files
+# Environment variables
 .env
-.env*.local
+.env.local
+*.env.*
 
-# typescript
-*.tsbuildinfo
-
-app-example
-
-# generated native folders
-/ios
-/android
-
-# IDE
+# IDE files
 .vscode/
 .idea/
 *.swp
 *.swo
-*~
+*.tmp
 
 # Logs
-logs
 *.log
 
-# OS
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+
+# Temporary files
+*.tmp
+*.temp
+.DS_Store
 Thumbs.db
-desktop.ini
-.folder-icon.ico
 
-# Build files
-*.tgz
-*.tar.gz
-.cache/
-
-# Webdev artifacts (checkpoint zips, migrations, etc.)
-.webdev/
-.project-config.json
-
-# graphify analysis cache
-graphify-out/
+# Lock files (since bun.lock was deleted)
+.yarn/
+pnp.*
+```
