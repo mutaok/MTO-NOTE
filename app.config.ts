@@ -61,6 +61,7 @@ const config: ExpoConfig = {
           buildArchs: ["arm64-v8a"],
           minSdkVersion: 24,
           targetSdkVersion: 34,
+          enableProguardInReleaseBuilds: true,
         },
       }
     ]
@@ -71,6 +72,9 @@ const config: ExpoConfig = {
   extra: {
     privacyPolicyUrl: "https://example.com/privacy",
     termsOfServiceUrl: "https://example.com/terms"
+  },
+  updates: {
+    fallbackToCacheTimeout: 0
   }
 };
 

@@ -2,46 +2,105 @@
 # Dependencies
 node_modules/
 
-# Build artifacts
-dist/
+# Build outputs
+android/app/build/
 build/
-.next/
-.nuxt/
-.un~lock-*
 
 # Environment variables
 .env
 .env.local
-*.env.*
+.env.*
 
 # IDE files
 .vscode/
 .idea/
 *.swp
 *.swo
-*.tmp
 
 # Logs
 *.log
 
-# Python cache
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# Coverage reports
+# Coverage
 coverage/
 htmlcov/
 .coverage
 
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg-info/
+.eggs/
+
 # Temporary files
 *.tmp
-*.temp
+*~
 .DS_Store
 Thumbs.db
 
-# Lock files (since bun.lock was deleted)
-.yarn/
-pnp.*
+# MyPy
+.mypy_cache/
+
+# Pytest
+.pytest_cache/
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+.venv/
+env.bak/
+venv.bak/
+
+# Compressed files
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
+
+# Expo / React Native
+.expo/
+expo-shared/
+*.apk
+*.aab
+*.ipa
+*.app
+*.exe
+*.dll
+*.so
+*.a
+*.out
+
+# Gradle
+.gradle/
+build/
+
+# Android
+*.dex
+*.class
+*.jar
+*.aar
+local.properties
 ```
