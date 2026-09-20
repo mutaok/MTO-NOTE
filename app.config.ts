@@ -70,8 +70,8 @@ const config: ExpoConfig = {
     typedRoutes: true,
   },
   extra: {
-    privacyPolicyUrl: "https://example.com/privacy",
-    termsOfServiceUrl: "https://example.com/terms"
+    privacyPolicyUrl: "https://noteflow.app/privacy",
+    termsOfServiceUrl: "https://noteflow.app/terms"
   },
   updates: {
     fallbackToCacheTimeout: 0

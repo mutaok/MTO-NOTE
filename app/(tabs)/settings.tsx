@@ -7,7 +7,6 @@ export default function SettingsScreen() {
   const colors = useColors();
   const [darkMode, setDarkMode] = useState(false);
   const [notifications, setNotifications] = useState(true);
-  const [language, setLanguage] = useState("tr");
 
   const SettingItem = ({ 
     title, 
@@ -50,7 +49,7 @@ export default function SettingsScreen() {
           title="Profil Bilgileri" 
           subtitle="Hesap bilgilerinizi düzenleyin"
           rightElement={<Text className="text-muted">›</Text>}
-          onPress={() => {/* TODO: Navigate to profile */}}
+          onPress={() => {}}
         />
 
         {/* Görünüm */}
@@ -62,7 +61,7 @@ export default function SettingsScreen() {
             <Switch 
               value={darkMode} 
               onValueChange={setDarkMode}
-              trackColor={{ false: "#767577", true: colors.primary }}
+              trackColor={{ false: "#767577", true: colors.tint }}
               thumbColor="#f4f3f4"
             />
           }
@@ -77,27 +76,25 @@ export default function SettingsScreen() {
             <Switch 
               value={notifications} 
               onValueChange={setNotifications}
-              trackColor={{ false: "#767577", true: colors.primary }}
+              trackColor={{ false: "#767577", true: colors.tint }}
               thumbColor="#f4f3f4"
             />
           }
         />
 
-        {/* Dil */}
+        {/* Genel */}
         <SectionHeader title="Genel" />
         <SettingItem 
           title="Dil" 
-          subtitle={language === "tr" ? "Türkçe" : "English"}
+          subtitle="Türkçe"
           rightElement={<Text className="text-muted">›</Text>}
-          onPress={() => {/* TODO: Show language selector */}}
+          onPress={() => {}}
         />
-
-        {/* Veri Yedekleme */}
         <SettingItem 
           title="Veri Yedekleme" 
           subtitle="Verilerinizi yedekleyin veya geri yükleyin"
           rightElement={<Text className="text-muted">›</Text>}
-          onPress={() => {/* TODO: Navigate to backup */}}
+          onPress={() => {}}
         />
 
         {/* Hakkında */}
@@ -105,12 +102,12 @@ export default function SettingsScreen() {
         <SettingItem 
           title="Gizlilik Politikası" 
           rightElement={<Text className="text-muted">›</Text>}
-          onPress={() => {/* TODO: Open privacy policy */}}
+          onPress={() => {}}
         />
         <SettingItem 
           title="Kullanım Şartları" 
           rightElement={<Text className="text-muted">›</Text>}
-          onPress={() => {/* TODO: Open terms of service */}}
+          onPress={() => {}}
         />
         <SettingItem 
           title="Uygulama Sürümü" 
@@ -118,17 +115,16 @@ export default function SettingsScreen() {
         />
 
         {/* Çıkış */}
-        <SectionHeader title="" />
         <TouchableOpacity 
-          className="bg-error/10 rounded-xl p-4 mt-4 border border-error/20 items-center"
-          onPress={() => {/* TODO: Logout */}}
+          className="bg-error/10 rounded-xl p-4 mt-6 border border-error/20 items-center"
+          onPress={() => {}}
         >
           <Text className="text-error font-semibold">Çıkış Yap</Text>
         </TouchableOpacity>
         
         <TouchableOpacity 
-          className="mt-3 items-center"
-          onPress={() => {/* TODO: Delete account */}}
+          className="mt-3 items-center pb-8"
+          onPress={() => {}}
         >
           <Text className="text-muted text-sm">Hesabı Sil</Text>
         </TouchableOpacity>
